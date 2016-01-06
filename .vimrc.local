@@ -1,0 +1,30 @@
+noremap <c-m><c-m> :tab ball<cr>
+noremap <c-h> :tabp<cr>
+noremap <c-l> :tabn<cr>
+set foldmethod=marker
+
+
+" 之前用的是<c-b> 为了不和tmux的默认键冲突才改的
+map <c-k><c-k> :call <SID>RunScript()<CR>
+map <c-k><c-m> :set foldmethod=marker<CR>
+
+" 两个<c-d><c-d>输入当前的时间
+imap <silent>  <c-d><c-d> <c-r>=strftime(" %c")<CR>
+
+" 调用外部命令执行当前的脚本文件 py/rb/pl/php/js/sh
+function! s:RunScript()
+    exec "w"    "先保存一下
+    if &filetype=="php"
+        exec "!php % "
+    elseif &filetype=="python"
+        exec "!python % "
+    elseif &filetype=="ruby"
+        exec "!ruby % "
+    elseif &filetype=="sh"
+        exec "!bash % "
+    elseif &filetype=="perl"
+        exec "!perl % "
+    elseif &filetype=="javascript"
+        exec "!node % "
+    endif
+endfunc

@@ -93,7 +93,6 @@
     if !exists('g:spf13_bundle_groups')
         let g:spf13_bundle_groups=['general', 'writing', 'neocomplete', 'programming', 'php', 'ruby', 'python', 'javascript', 'html', 'misc',]
     endif
-
     " To override all the included bundles, add the following to your
     " .vimrc.bundles.local file:
     "   let g:override_spf13_bundles = 1
@@ -103,10 +102,10 @@
         if count(g:spf13_bundle_groups, 'general')
             Bundle 'scrooloose/nerdtree'
             Bundle 'altercation/vim-colors-solarized'
-            Bundle 'spf13/vim-colors'
-            Bundle 'tpope/vim-surround'
+            "Bundle 'spf13/vim-colors' " wcq modify"
+            "Bundle 'tpope/vim-surround'
             Bundle 'tpope/vim-repeat'
-            Bundle 'jiangmiao/auto-pairs'
+            "Bundle 'jiangmiao/auto-pairs'
             Bundle 'ctrlpvim/ctrlp.vim'
             Bundle 'tacahiroy/ctrlp-funky'
             Bundle 'kristijanhusak/vim-multiple-cursors'
@@ -122,7 +121,7 @@
             Bundle 'bling/vim-bufferline'
             Bundle 'Lokaltog/vim-easymotion'
             Bundle 'jistr/vim-nerdtree-tabs'
-            Bundle 'flazz/vim-colorschemes'
+            "Bundle 'flazz/vim-colorschemes'  " wcq modify
             Bundle 'mbbill/undotree'
             Bundle 'nathanaelkane/vim-indent-guides'
             if !exists('g:spf13_no_views')
@@ -170,11 +169,11 @@
             if filereadable(expand("~/.vim/bundle/vim-snippets/snippets/support_functions.vim"))
                 source ~/.vim/bundle/vim-snippets/snippets/support_functions.vim
             endif
-        elseif count(g:spf13_bundle_groups, 'youcompleteme')
+        elseif count(g:spf13_bundle_groups, 'youcompleteme') " 这个貌似没有的
             Bundle 'Valloric/YouCompleteMe'
             Bundle 'SirVer/ultisnips'
             Bundle 'honza/vim-snippets'
-        elseif count(g:spf13_bundle_groups, 'neocomplcache')
+        elseif count(g:spf13_bundle_groups, 'neocomplcache') " 这个貌似没有的
             Bundle 'Shougo/neocomplcache'
             Bundle 'Shougo/neosnippet'
             Bundle 'Shougo/neosnippet-snippets'
@@ -207,34 +206,34 @@
 
     " Javascript {
         if count(g:spf13_bundle_groups, 'javascript')
-            Bundle 'elzr/vim-json'
-            Bundle 'groenewege/vim-less'
-            Bundle 'pangloss/vim-javascript'
-            Bundle 'briancollins/vim-jst'
-            Bundle 'kchmck/vim-coffee-script'
+            " Bundle 'elzr/vim-json'
+            " Bundle 'groenewege/vim-less'
+            " Bundle 'pangloss/vim-javascript'
+            " Bundle 'briancollins/vim-jst'
+            " Bundle 'kchmck/vim-coffee-script'
         endif
     " }
 
     " Scala {
         if count(g:spf13_bundle_groups, 'scala')
-            Bundle 'derekwyatt/vim-scala'
-            Bundle 'derekwyatt/vim-sbt'
-            Bundle 'xptemplate'
+            " Bundle 'derekwyatt/vim-scala'
+            " Bundle 'derekwyatt/vim-sbt'
+            " Bundle 'xptemplate'
         endif
     " }
 
     " Haskell {
         if count(g:spf13_bundle_groups, 'haskell')
-            Bundle 'travitch/hasksyn'
-            Bundle 'dag/vim2hs'
-            Bundle 'Twinside/vim-haskellConceal'
-            Bundle 'Twinside/vim-haskellFold'
-            Bundle 'lukerandall/haskellmode-vim'
-            Bundle 'eagletmt/neco-ghc'
-            Bundle 'eagletmt/ghcmod-vim'
-            Bundle 'Shougo/vimproc.vim'
-            Bundle 'adinapoli/cumino'
-            Bundle 'bitc/vim-hdevtools'
+            " Bundle 'travitch/hasksyn'
+            " Bundle 'dag/vim2hs'
+            " Bundle 'Twinside/vim-haskellConceal'
+            " Bundle 'Twinside/vim-haskellFold'
+            " Bundle 'lukerandall/haskellmode-vim'
+            " Bundle 'eagletmt/neco-ghc'
+            " Bundle 'eagletmt/ghcmod-vim'
+            " Bundle 'Shougo/vimproc.vim'
+            " Bundle 'adinapoli/cumino'
+            " Bundle 'bitc/vim-hdevtools'
         endif
     " }
 
@@ -258,34 +257,34 @@
 
     " Puppet {
         if count(g:spf13_bundle_groups, 'puppet')
-            Bundle 'rodjek/vim-puppet'
+            " Bundle 'rodjek/vim-puppet'
         endif
     " }
 
     " Go Lang {
         if count(g:spf13_bundle_groups, 'go')
             "Bundle 'Blackrush/vim-gocode'
-            Bundle 'fatih/vim-go'
+            " Bundle 'fatih/vim-go'
         endif
     " }
 
     " Elixir {
         if count(g:spf13_bundle_groups, 'elixir')
-            Bundle 'elixir-lang/vim-elixir'
-            Bundle 'carlosgaldino/elixir-snippets'
-            Bundle 'mattreduce/vim-mix'
+            " Bundle 'elixir-lang/vim-elixir'
+            " Bundle 'carlosgaldino/elixir-snippets'
+            " Bundle 'mattreduce/vim-mix'
         endif
     " }
 
     " Misc {
         if count(g:spf13_bundle_groups, 'misc')
-            Bundle 'rust-lang/rust.vim'
-            Bundle 'tpope/vim-markdown'
-            Bundle 'spf13/vim-preview'
-            Bundle 'tpope/vim-cucumber'
-            Bundle 'cespare/vim-toml'
-            Bundle 'quentindecock/vim-cucumber-align-pipes'
-            Bundle 'saltstack/salt-vim'
+            " Bundle 'rust-lang/rust.vim'
+            " Bundle 'tpope/vim-markdown'
+            " Bundle 'spf13/vim-preview'
+            " Bundle 'tpope/vim-cucumber'
+            " Bundle 'cespare/vim-toml'
+            " Bundle 'quentindecock/vim-cucumber-align-pipes'
+            " Bundle 'saltstack/salt-vim'
         endif
     " }
 
