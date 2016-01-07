@@ -101,7 +101,7 @@
     " General {
         if count(g:spf13_bundle_groups, 'general')
             Bundle 'scrooloose/nerdtree'
-            Bundle 'altercation/vim-colors-solarized'
+            Bundle 'wuchangqian/vim-colors-solarized'
             "Bundle 'spf13/vim-colors' " wcq modify"
             "Bundle 'tpope/vim-surround'
             Bundle 'tpope/vim-repeat'
