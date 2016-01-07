@@ -138,10 +138,10 @@
 
     " Writing {
         if count(g:spf13_bundle_groups, 'writing')
-            Bundle 'reedes/vim-litecorrect'
-            Bundle 'reedes/vim-textobj-sentence'
-            Bundle 'reedes/vim-textobj-quote'
-            Bundle 'reedes/vim-wordy'
+            " Bundle 'reedes/vim-litecorrect'
+            " Bundle 'reedes/vim-textobj-sentence'
+            " Bundle 'reedes/vim-textobj-quote'
+            " Bundle 'reedes/vim-wordy'
         endif
     " }
 
@@ -169,11 +169,11 @@
             if filereadable(expand("~/.vim/bundle/vim-snippets/snippets/support_functions.vim"))
                 source ~/.vim/bundle/vim-snippets/snippets/support_functions.vim
             endif
-        elseif count(g:spf13_bundle_groups, 'youcompleteme') " Õâ¸öÃ²ËÆÃ»ÓÐµÄ
+        elseif count(g:spf13_bundle_groups, 'youcompleteme') " è¿™ä¸ªè²Œä¼¼æ²¡æœ‰çš„
             Bundle 'Valloric/YouCompleteMe'
             Bundle 'SirVer/ultisnips'
             Bundle 'honza/vim-snippets'
-        elseif count(g:spf13_bundle_groups, 'neocomplcache') " Õâ¸öÃ²ËÆÃ»ÓÐµÄ
+        elseif count(g:spf13_bundle_groups, 'neocomplcache') " è¿™ä¸ªè²Œä¼¼æ²¡æœ‰çš„
             Bundle 'Shougo/neocomplcache'
             Bundle 'Shougo/neosnippet'
             Bundle 'Shougo/neosnippet-snippets'
