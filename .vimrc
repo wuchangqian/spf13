@@ -346,8 +346,8 @@
     " .vimrc.before.local file:
     "   let g:spf13_no_fastTabs = 1
     if !exists('g:spf13_no_fastTabs')
-        map <S-H> gT
-        map <S-L> gt
+        "map <S-H> gT
+        "map <S-L> gt
     endif
 
     " Stupid shift key fixes
@@ -387,10 +387,10 @@
     nnoremap gv guiW
 
     "go to first and last char of line
-    nnoremap H ^
-    nnoremap L g_
-    vnoremap H ^
-    vnoremap L g_
+    "nnoremap H ^
+    "nnoremap L g_
+    "vnoremap H ^
+    "vnoremap L g_
 
     " Most prefer to toggle search highlighting rather than clear the current
     " search results. To clear search highlighting rather than toggle it on
